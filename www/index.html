@@ -1,239 +1,264 @@
-<!doctype html>
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
 <html>
-<head>
-<title>
-</title>
-<link rel="stylesheet" href="Content/style.css">
-<link rel="stylesheet" href="Content/jquery-ui.css">
-<script src='script/jquery-1.11.0.js'></script>
-  <script src="script/jquery-ui.js"></script>
-<script src='script/script.js'></script>
-</head>
-<body>
-<div class='body-wrapper'>
-	<div class='container'>	
-		<div class='c'>
-			<div class='PA-header'>
-				<div class="left-headerPA">
-						<div class="left-borderPA-header-red"></div>
-						<div class="left-checkbox-PA-header-red">
-									<div class="style1 style2">
-									  <div class="">
-										<input type="checkbox" class="checkA" id='master-check'>
-									  </div>
-									</div>
-						</div>
-				</div>
-				<span class='inpection-type-label blue-dark'>INSPECTION TYPE</span>
-				<div class='right-accPA-header'>
-					<span class='points-label blue-dark'>POINTS</span>
-					<div class='vertical-dots'>
-						<ul class='vertical-dot-ul-1'>
-							<li class='vertical-li'></li>
-							<li class='vertical-li'></li>
-							<li class='vertical-li'></li>
-						</ul>
-						<div class='edit-menu'>
-							<div class='aux-1'></div>
-							<div class='aux-2'>
-						<ul>
-							<li class='vertical-li-wh'></li>
-							<li class='vertical-li-wh'></li>
-							<li class='vertical-li-wh'></li>
-						</ul>
-							</div>
-							<div class='edit-menu-li'>
-								<ul>
-									<li class='add-inspection-type'>ADD</li>
-									<li class='delete-inspection-type'>REMOVE</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class='accordion'>
-				<h1 class='clearfix acchead'>
-					<div class='left-acchead'>
-						<div class='left-borderPA-red'></div>
-						<div class='left-checkbox-PA-red'>
-									<div class="style1 style2">
-									  <div class="">
-										<input type="checkbox" class="checkA"  >
-									  </div>
-									</div>
-						</div>
-					</div>
-					<div class='right-acchead clearfix'>
-						<div class='inspectione-typePA'>
-							<span class='inspection-name blue'>STA</span>
-							<span class='inspection-desc'>STATEROOM</span>
-						</div>
-							<div class='right-accPA'>
-								<div class='assigned-apointsPA blue'>47</div>
-								<div class='right-select-optionPA'></div>
-							</div>
-					</div>
-				</h1>
-				<div class='acc-child'>
-					<div class='acc-child-left'>
-							<div class='left-borderPA-blue'></div>
-							<div class='left-checkbox-PA-blue'>
-								<div class="style1">
-								  <div class="">
-									<input type="checkbox" class="checkA"  >
-								  </div>
-								</div>
-							</div>
-					</div>
-						<div class='acc-child-right clearfix'>
-							<div class='row'>
-								<div class='labelPA blue'>INSPECTION TYPE</div>
-								<div class='inputboxPA'><input type='text' class='inspection-type-placeholder' MAXLENGTH='20'/></div>
-							</div>
-							<div class='row'>
-								<div class='labelPA descPA'>DESCRIPTION</div>
-								<div class='inputboxPA'><input type='text' class='inspection-type-desc-placeholder' MAXLENGTH='20'/></div>
-							</div>
-							<div class='row'>
-								<div class='labelPA blue'>POINTS</div>
-								<div class='inputbox-smallPA'><input type='text' class='inspection-type-points' MAXLENGTH='3'	/></div>
-								<div class='add-points' style='margin-left:20px;'><span>+</span></div>
-								<div class='delete-points' style='margin-left:50px;'><span>_</span></div>
-								<button class='update'>Update</button>
-								<div class='clear'></div>
-							</div>
-						 </div>
-				</div>
-				<h1 class='clearfix acchead'>
-					<div class='left-acchead'>
-						<div class='left-borderPA-red'></div>
-						<div class='left-checkbox-PA-red'>
-									<div class="style1 style2">
-									  <div class="">
-										<input type="checkbox" class="checkA"  >
-									  </div>
-									</div>
-						</div>
-					</div>
-					<div class='right-acchead clearfix'>
-						<div class='inspectione-typePA'>
-							<span class='inspection-name blue'>HLW</span>
-							<span class='inspection-desc'>HALLWAY</span>
-						</div>
-						<div class='right-accPA'>
-							<div class='assigned-apointsPA blue'>4</div>
-							<div class='right-select-optionPA'></div>
-						</div>
-					</div>
-				</h1>
-				<div class='acc-child'>
-					<div class='acc-child-left'>
-							<div class='left-borderPA-blue'></div>
-							<div class='left-checkbox-PA-blue'>
-								<div class="style1">
-								  <div class="">
-									<input type="checkbox" class="checkA"  >
-								  </div>
-								</div>
-							</div>
-					</div>
-						<div class='acc-child-right clearfix'>
-							<div class='row'>
-								<div class='labelPA blue'>INSPECTION TYPE</div>
-								<div class='inputboxPA'><input type='text' class='inspection-type-placeholder' MAXLENGTH='20'/></div>
-							</div>
-							<div class='row'>
-								<div class='labelPA descPA'>DESCRIPTION</div>
-								<div class='inputboxPA'><input type='text' class='inspection-type-desc-placeholder' MAXLENGTH='20'/></div>
-							</div>
-							<div class='row'>
-								<div class='labelPA blue'>POINTS</div>
-								<div class='inputbox-smallPA'><input type='text' class='inspection-type-points' MAXLENGTH='3'/></div>
-								<div class='add-points' style='margin-left:20px;'><span>+</span></div>
-								<div class='delete-points' style='margin-left:50px;'><span>_</span></div>
-								<button class='update'>Update</button>
-								<div class='clear'></div>
-							</div>
-						 </div>
-				</div>
-				<h1 class='clearfix acchead'>
-					<div class='left-acchead'>
-						<div class='left-borderPA-red'></div>
-						<div class='left-checkbox-PA-red'>
-									<div class="style1 style2">
-									  <div class="">
-										<input type="checkbox" class="checkA"  >
-									  </div>
-									</div>
-						</div>
-					</div>
-					<div class='right-acchead clearfix'>
-						<div class='inspectione-typePA'>
-							<span class='inspection-name blue'>LOC</span>
-							<span class='inspection-desc'>LOCKER</span>
-						</div>
-						<div class='right-accPA'>
-							<div class='assigned-apointsPA blue'>15</div>
-							<div class='right-select-optionPA'></div>
-						</div>
-					</div>
-				</h1>
-				<div class='acc-child'>
-					<div class='acc-child-left'>
-							<div class='left-borderPA-blue'></div>
-							<div class='left-checkbox-PA-blue'>
-								<div class="style1">
-								  <div class="">
-									<input type="checkbox" class="checkA"  >
-								  </div>
-								</div>
-							</div>
-					</div>
-						<div class='acc-child-right clearfix'>
-							<div class='row'>
-								<div class='labelPA blue'>INSPECTION TYPE</div>
-								<div class='inputboxPA'><input type='text' class='inspection-type-placeholder' MAXLENGTH='20'/></div>
-							</div>
-							<div class='row'>
-								<div class='labelPA descPA'>DESCRIPTION</div>
-								<div class='inputboxPA'><input type='text' class='inspection-type-desc-placeholder' MAXLENGTH='20'/></div>
-							</div>
-							<div class='row'>
-								<div class='labelPA blue'>POINTS</div>
-								<div class='inputbox-smallPA'><input type='text' class='inspection-type-points' MAXLENGTH='3'/></div>
-								<div class='add-points' style='margin-left:20px;'><span>+</span></div>
-								<div class='delete-points' style='margin-left:50px;'><span>_</span></div>
-								<button class='update'>Update</button>
-								<div class='clear'></div>
-							</div>
-						 </div>
-				</div>
-			</div>	
-			<div class='acc-remove'>
-								  <div class="">
-									Remove
-								  </div>
-			</div>
-			<div class='close-icon'>+</div>
-		</div>
-	</div>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Hello World</title>
+    </head>
+    <body>
+        <div class="app">
+            <h1>PhoneGap</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <h2 class="event received">Hello World!!!</h2>
+            </div>
+        </div>
+        <div class='container'> 
+        <div class='c'>
+            <div class='PA-header'>
+                <div class="left-headerPA">
+                        <div class="left-borderPA-header-red"></div>
+                        <div class="left-checkbox-PA-header-red">
+                                    <div class="style1 style2">
+                                      <div class="">
+                                        <input type="checkbox" class="checkA" id='master-check'>
+                                      </div>
+                                    </div>
+                        </div>
+                </div>
+                <span class='inpection-type-label blue-dark'>INSPECTION TYPE</span>
+                <div class='right-accPA-header'>
+                    <span class='points-label blue-dark'>POINTS</span>
+                    <div class='vertical-dots'>
+                        <ul class='vertical-dot-ul-1'>
+                            <li class='vertical-li'></li>
+                            <li class='vertical-li'></li>
+                            <li class='vertical-li'></li>
+                        </ul>
+                        <div class='edit-menu'>
+                            <div class='aux-1'></div>
+                            <div class='aux-2'>
+                        <ul>
+                            <li class='vertical-li-wh'></li>
+                            <li class='vertical-li-wh'></li>
+                            <li class='vertical-li-wh'></li>
+                        </ul>
+                            </div>
+                            <div class='edit-menu-li'>
+                                <ul>
+                                    <li class='add-inspection-type'>ADD</li>
+                                    <li class='delete-inspection-type'>REMOVE</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='accordion'>
+                <h1 class='clearfix acchead'>
+                    <div class='left-acchead'>
+                        <div class='left-borderPA-red'></div>
+                        <div class='left-checkbox-PA-red'>
+                                    <div class="style1 style2">
+                                      <div class="">
+                                        <input type="checkbox" class="checkA"  >
+                                      </div>
+                                    </div>
+                        </div>
+                    </div>
+                    <div class='right-acchead clearfix'>
+                        <div class='inspectione-typePA'>
+                            <span class='inspection-name blue'>STA</span>
+                            <span class='inspection-desc'>STATEROOM</span>
+                        </div>
+                            <div class='right-accPA'>
+                                <div class='assigned-apointsPA blue'>47</div>
+                                <div class='right-select-optionPA'></div>
+                            </div>
+                    </div>
+                </h1>
+                <div class='acc-child'>
+                    <div class='acc-child-left'>
+                            <div class='left-borderPA-blue'></div>
+                            <div class='left-checkbox-PA-blue'>
+                                <div class="style1">
+                                  <div class="">
+                                    <input type="checkbox" class="checkA"  >
+                                  </div>
+                                </div>
+                            </div>
+                    </div>
+                        <div class='acc-child-right clearfix'>
+                            <div class='row'>
+                                <div class='labelPA blue'>INSPECTION TYPE</div>
+                                <div class='inputboxPA'><input type='text' class='inspection-type-placeholder' MAXLENGTH='20'/></div>
+                            </div>
+                            <div class='row'>
+                                <div class='labelPA descPA'>DESCRIPTION</div>
+                                <div class='inputboxPA'><input type='text' class='inspection-type-desc-placeholder' MAXLENGTH='20'/></div>
+                            </div>
+                            <div class='row'>
+                                <div class='labelPA blue'>POINTS</div>
+                                <div class='inputbox-smallPA'><input type='text' class='inspection-type-points' MAXLENGTH='3'   /></div>
+                                <div class='add-points' style='margin-left:20px;'><span>+</span></div>
+                                <div class='delete-points' style='margin-left:50px;'><span>_</span></div>
+                                <button class='update'>Update</button>
+                                <div class='clear'></div>
+                            </div>
+                         </div>
+                </div>
+                <h1 class='clearfix acchead'>
+                    <div class='left-acchead'>
+                        <div class='left-borderPA-red'></div>
+                        <div class='left-checkbox-PA-red'>
+                                    <div class="style1 style2">
+                                      <div class="">
+                                        <input type="checkbox" class="checkA"  >
+                                      </div>
+                                    </div>
+                        </div>
+                    </div>
+                    <div class='right-acchead clearfix'>
+                        <div class='inspectione-typePA'>
+                            <span class='inspection-name blue'>HLW</span>
+                            <span class='inspection-desc'>HALLWAY</span>
+                        </div>
+                        <div class='right-accPA'>
+                            <div class='assigned-apointsPA blue'>4</div>
+                            <div class='right-select-optionPA'></div>
+                        </div>
+                    </div>
+                </h1>
+                <div class='acc-child'>
+                    <div class='acc-child-left'>
+                            <div class='left-borderPA-blue'></div>
+                            <div class='left-checkbox-PA-blue'>
+                                <div class="style1">
+                                  <div class="">
+                                    <input type="checkbox" class="checkA"  >
+                                  </div>
+                                </div>
+                            </div>
+                    </div>
+                        <div class='acc-child-right clearfix'>
+                            <div class='row'>
+                                <div class='labelPA blue'>INSPECTION TYPE</div>
+                                <div class='inputboxPA'><input type='text' class='inspection-type-placeholder' MAXLENGTH='20'/></div>
+                            </div>
+                            <div class='row'>
+                                <div class='labelPA descPA'>DESCRIPTION</div>
+                                <div class='inputboxPA'><input type='text' class='inspection-type-desc-placeholder' MAXLENGTH='20'/></div>
+                            </div>
+                            <div class='row'>
+                                <div class='labelPA blue'>POINTS</div>
+                                <div class='inputbox-smallPA'><input type='text' class='inspection-type-points' MAXLENGTH='3'/></div>
+                                <div class='add-points' style='margin-left:20px;'><span>+</span></div>
+                                <div class='delete-points' style='margin-left:50px;'><span>_</span></div>
+                                <button class='update'>Update</button>
+                                <div class='clear'></div>
+                            </div>
+                         </div>
+                </div>
+                <h1 class='clearfix acchead'>
+                    <div class='left-acchead'>
+                        <div class='left-borderPA-red'></div>
+                        <div class='left-checkbox-PA-red'>
+                                    <div class="style1 style2">
+                                      <div class="">
+                                        <input type="checkbox" class="checkA"  >
+                                      </div>
+                                    </div>
+                        </div>
+                    </div>
+                    <div class='right-acchead clearfix'>
+                        <div class='inspectione-typePA'>
+                            <span class='inspection-name blue'>LOC</span>
+                            <span class='inspection-desc'>LOCKER</span>
+                        </div>
+                        <div class='right-accPA'>
+                            <div class='assigned-apointsPA blue'>15</div>
+                            <div class='right-select-optionPA'></div>
+                        </div>
+                    </div>
+                </h1>
+                <div class='acc-child'>
+                    <div class='acc-child-left'>
+                            <div class='left-borderPA-blue'></div>
+                            <div class='left-checkbox-PA-blue'>
+                                <div class="style1">
+                                  <div class="">
+                                    <input type="checkbox" class="checkA"  >
+                                  </div>
+                                </div>
+                            </div>
+                    </div>
+                        <div class='acc-child-right clearfix'>
+                            <div class='row'>
+                                <div class='labelPA blue'>INSPECTION TYPE</div>
+                                <div class='inputboxPA'><input type='text' class='inspection-type-placeholder' MAXLENGTH='20'/></div>
+                            </div>
+                            <div class='row'>
+                                <div class='labelPA descPA'>DESCRIPTION</div>
+                                <div class='inputboxPA'><input type='text' class='inspection-type-desc-placeholder' MAXLENGTH='20'/></div>
+                            </div>
+                            <div class='row'>
+                                <div class='labelPA blue'>POINTS</div>
+                                <div class='inputbox-smallPA'><input type='text' class='inspection-type-points' MAXLENGTH='3'/></div>
+                                <div class='add-points' style='margin-left:20px;'><span>+</span></div>
+                                <div class='delete-points' style='margin-left:50px;'><span>_</span></div>
+                                <button class='update'>Update</button>
+                                <div class='clear'></div>
+                            </div>
+                         </div>
+                </div>
+            </div>  
+            <div class='acc-remove'>
+                                  <div class="">
+                                    Remove
+                                  </div>
+            </div>
+            <div class='close-icon'>+</div>
+        </div>
+    </div>
 </div>
 <div class='delete-confirmation animated '>
-	<div class='dialog-title'>Confirmation</div>
-	<div class='dialog-text'>Are you sure you want to delete the selected Inspection Type(s)?</div>
-	<div class='dialog-buttons'>
-		<button class='dialog-yes'>Yes</button>
-		<div class='between-buttons'></div>
-		<button class='dialog-no'>No</button>
-	</div>
+    <div class='dialog-title'>Confirmation</div>
+    <div class='dialog-text'>Are you sure you want to delete the selected Inspection Type(s)?</div>
+    <div class='dialog-buttons'>
+        <button class='dialog-yes'>Yes</button>
+        <div class='between-buttons'></div>
+        <button class='dialog-no'>No</button>
+    </div>
 </div>
 <div class='animated select-one'>
-	<div class='dialog-text'>Select atleast one Inspection Type.</div>
-	<div class='dialog-buttons'>
-		<button class='dialog-ok'>Ok</button>
-	</div>
-</div>
-<div class='mask'></div>
-</body>
+    <div class='dialog-text'>Select atleast one Inspection Type.</div>
+    <div class='dialog-buttons'>
+        <button class='dialog-ok'>Ok</button>
+    </div>
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
 </html>
